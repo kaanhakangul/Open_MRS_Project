@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="my suit">
+    <test name="test1">
+
+        <!-- hangi gruplar çalıştırılacak-->
+        <groups>
+            <run>
+              <include name="Smoke Test"></include>
+              <include name="Regression"></include>
+            </run>
+        </groups>
+
+        <!--çalışacak classların yazıldığı bölüm-->
+        <classes>
+            <class name="Gun03._01_Groups"></class>
+        </classes>
+
+
+    </test>
+</suite>
