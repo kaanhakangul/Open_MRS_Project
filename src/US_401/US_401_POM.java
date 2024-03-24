@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class US_401_POM extends GkkBaseDriver {
     //Kodların olacağı kısım
-    @Test(groups = {"Smoke"}, dataProvider = "userNamePassword")
+    @Test(groups = {"Smoke","Login"}, dataProvider = "userNamePassword")
     public void US401(String userName, String password) {
 
         US_401_Elements elements = new US_401_Elements();
@@ -44,7 +44,7 @@ public class US_401_POM extends GkkBaseDriver {
         return usernamePassword;
 
     }
-    @Test
+    @Test(groups = "Login")
     public void logIn(){
         US_401_Elements elements = new US_401_Elements();
         myClick(elements.language);
