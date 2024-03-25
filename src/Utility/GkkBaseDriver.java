@@ -1,5 +1,7 @@
 package Utility;
 
+import US_402.US_402_Elements;
+import US_402.US_402_POM;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -54,6 +56,24 @@ public class GkkBaseDriver {
     public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) GkkBaseDriver.driver;
         js.executeScript("arguments[0].scrollIntoView();", element);
+    }
+
+    public void login(){
+
+        US_402_Elements elements = new US_402_Elements();
+        myClick(elements.language);
+        myClick(elements.english);
+        myClick(elements.demo);
+        myClick(elements.openMRS2);
+        scrollToElement(elements.EnterTheOpenMRS2Demo);
+        myClick(elements.EnterTheOpenMRS2Demo);
+        wait.until(ExpectedConditions.visibilityOf(elements.userName));
+        elements.userName.sendKeys("admin");
+        wait.until(ExpectedConditions.visibilityOf(elements.password));
+        elements.password.sendKeys("Admin123");
+        myClick(elements.inpatientWard);
+        myClick(elements.loginButton);
+
     }
 
 
