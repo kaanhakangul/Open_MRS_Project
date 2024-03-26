@@ -76,6 +76,11 @@ public class GkkBaseDriver {
 
     }
 
+    public static void JSClick(WebElement e){
+        JavascriptExecutor js=(JavascriptExecutor) GkkBaseDriver.driver;
+        js.executeScript("arguments[0].click();", e); // js click : sayfanın içinden click
+    }
+
 
     @AfterMethod
     public static void quitDriver() {

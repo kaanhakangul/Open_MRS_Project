@@ -21,7 +21,8 @@ public class US_406_POM extends GkkBaseDriver {
      myClick(elements.findPatient);
      mySendKeys(elements.idorNameInput, patientName);
      if (elements.name.getText().equals(patientName)){
-         myClick(elements.name);
+         wait.until(ExpectedConditions.visibilityOf(elements.name));
+         elements.name.click();
      }
 
      //Hasta detaylarının liste atılması
@@ -49,10 +50,6 @@ public class US_406_POM extends GkkBaseDriver {
        Assert.assertEquals(elements.wrongNameMessage.getText(),"No matching records found","Kullanıcı mevcuttur.");
 
    }
-
-
-
-
 
 
 
