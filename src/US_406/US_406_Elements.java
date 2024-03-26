@@ -21,8 +21,8 @@ public class US_406_Elements {
     @FindBy (xpath="(//tbody[@role='alert']//tr//td)[2]")
     public WebElement name;
 
-    @FindBy (xpath="//div[@class='info-header']")
-    public WebElement patientInfos;
+    @FindBy (xpath="//td[text()='No matching records found']")
+    public WebElement wrongNameMessage;
 
 
 
