@@ -21,6 +21,14 @@ public class US_405_Elements {
     @FindBy(xpath = "//a[@href='/openmrs/adminui/myaccount/myAccount.page']")
     public WebElement myAccount;
 
+    @FindBy(xpath = "(//div[@class='task'])[1]")
+    public WebElement changePassword;
+
+    @FindBy(xpath="(//div[@class='task'])[2]")
+    public WebElement myLanguages;
+
+
+
     public void hoverOver(WebElement element){
         Actions aksiyonDriver=new Actions(GkkBaseDriver.driver);
         Action aksiyon=aksiyonDriver.moveToElement(element).build();
