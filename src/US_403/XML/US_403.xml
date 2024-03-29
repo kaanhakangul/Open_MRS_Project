@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="my suit">
-    <test name="test1">
+<suite name="US_403_TestSuite">
+    <test name="US403Test">
 
         <!-- hangi gruplar çalıştırılacak-->
         <groups>
             <run>
-              <include name="Smoke Test"></include>
-              <include name="Regression"></include>
+              <include name="Smoke"/>
+              <include name="Logout"/>
             </run>
         </groups>
 
         <!--çalışacak classların yazıldığı bölüm-->
         <classes>
-            <class name="Gun03._01_Groups"></class>
+            <class name="US_403.US_403_POM"/>
         </classes>
 
 

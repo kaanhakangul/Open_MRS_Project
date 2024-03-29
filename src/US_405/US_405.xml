@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="US_404_TestSuite">
-    <test name="US404Test">
+<suite name="US_405_TestSuite">
+    <test name="US405Test">
 
         <!-- hangi gruplar çalıştırılacak-->
         <groups>
             <run>
                 <include name="dependsOnMethods"/>
-              <include name="Regression"/>
+              <include name="Smoke"/>
             </run>
         </groups>
 
         <!--çalışacak classların yazıldığı bölüm-->
         <classes>
-            <class name="US_404.US_404_POM"/>
+            <class name="US_405.US_405_POM"/>
             <class name="US_402.US_402_POM"/>
         </classes>
 

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="US_404_TestSuite">
-    <test name="US404Test">
+<suite name="US_406_TestSuite">
+    <test name="US406Test">
 
         <!-- hangi gruplar çalıştırılacak-->
         <groups>
             <run>
-                <include name="dependsOnMethods"/>
-              <include name="Regression"/>
+              <include name="PatientManagement"/>
             </run>
         </groups>
 
         <!--çalışacak classların yazıldığı bölüm-->
         <classes>
-            <class name="US_404.US_404_POM"/>
-            <class name="US_402.US_402_POM"/>
+            <class name="US_406.US_406_POM"/>
         </classes>
 
 
