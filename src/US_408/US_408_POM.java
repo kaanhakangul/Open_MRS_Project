@@ -1,22 +1,19 @@
 package US_408;
 
 
-import US_407.US_407_Elements;
 import US_409.US_409_Elements;
 import Utility.GkkBaseDriver;
 import net.bytebuddy.utility.RandomString;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-public class US_409_POM extends GkkBaseDriver {
+public class US_408_POM extends GkkBaseDriver {
 
     @Test(groups = {"Regression", "PatientManagement"})
-    public void US409() {
+    public void US408() {
         List<String> ids = new ArrayList<>();
         US_409_Elements elements=new US_409_Elements();
         login();

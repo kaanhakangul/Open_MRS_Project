@@ -14,7 +14,7 @@ import java.util.List;
 public class US_404_POM extends GkkBaseDriver {
 
     //Kodların olacağı kısım
-    @Test(groups = {"Regression"}, dependsOnMethods = {"US_402.US_402_POM_US402"})
+    @Test(groups = {"Regression", "dependsOnMethods"}, dependsOnMethods = {"US_402.US_402_POM_US402"})
     public void US404() {
         US_404_Elements elements = new US_404_Elements();
         myClick(elements.language);

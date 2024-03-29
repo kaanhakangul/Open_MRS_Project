@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="All Reports Suite">
+    <test name="All Reports">
+
+        <groups>
+            <run>
+                <include name="Login"/>
+                <include name="Smoke"/>
+                <include name="Regression"/>
+                <include name="PatientManagement"/>
+                <include name="Logout"/>
+            </run>
+        </groups>
+
+        <classes>
+                <class name="US_401.US_401_POM"/>
+            <class name="US_402.US_402_POM"/>
+            <class name="US_403.US_403_POM"/>
+            <class name="US_404.US_404_POM"/>
+            <class name="US_405.US_405_POM"/>
+            <class name="US_406.US_406_POM"/>
+            <class name="US_407.US_407_POM"/>
+            <class name="US_408.US_408_POM"/>
+            <class name="US_409.US_409_POM"/>
+        </classes>
+
+    </test>
+</suite>

@@ -11,8 +11,8 @@ import java.util.List;
 public class US_409_POM extends GkkBaseDriver {
 
     @Test(groups = {"Regression", "PatientManagement"})
-    public void US408() {
-        US_408_Elements elements = new US_408_Elements();
+    public void US409() {
+        US_409_Elements elements = new US_409_Elements();
         login();
         myClick(elements.findPatient);
         myClick(elements.searchResults);

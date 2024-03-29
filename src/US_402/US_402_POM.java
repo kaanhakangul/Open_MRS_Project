@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class US_402_POM extends GkkBaseDriver {
 
     //Kodların olacağı kısım
-    @Test(groups = {"Smoke","Login"})
+    @Test(groups = {"Smoke","Login","dependsOnMethods"})
     public void US402() {
 
         US_402_Elements elements = new US_402_Elements();

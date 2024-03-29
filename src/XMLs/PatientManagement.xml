@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Patient Management Suite">
+    <test name="Patient Management">
+
+        <groups>
+            <run>
+                <include name="PatientManagement"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_406.US_406_POM"/>
+            <class name="US_407.US_407_POM"/>
+            <class name="US_408.US_408_POM"/>
+            <class name="US_409.US_409_POM"/>
+        </classes>
+
+    </test>
+</suite>
