@@ -13,7 +13,7 @@ import java.util.List;
 public class US_406_POM extends GkkBaseDriver {
 
 
-   @Test (dataProvider = "patientName")
+   @Test (groups = {"PatientManagement"}, dataProvider = "patientName")
    public void US_406(String patientName){
 
      US_406_Elements elements=new US_406_Elements();

@@ -11,7 +11,7 @@ public class US_405_POM extends GkkBaseDriver {
 
 
 
-    @Test
+    @Test(groups = {"Smoke"}, dependsOnMethods = {"US_402.US_402_POM_US402"})
     public void US_405() {
 
         US_405_Elements elements = new US_405_Elements();

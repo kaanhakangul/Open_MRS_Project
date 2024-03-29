@@ -16,7 +16,7 @@ import java.util.List;
 
 public class US_407_POM extends GkkBaseDriver {
 
-    @Test(dataProvider = "patientName")
+    @Test(groups = {"PatientManagement" , "Smoke"} ,dataProvider = "patientName")
     public void US_407(String patientName){
 
         US_407_Elements elements=new US_407_Elements();
