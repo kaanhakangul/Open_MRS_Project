@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regression Suite">
+    <test name="Regression">
+
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_404.US_404_POM"/>
+            <class name="US_408.US_408_POM"/>
+            <class name="US_409.US_409_POM"/>
+            <class name="US_402.US_402_POM"/>
+        </classes>
+
+    </test>
+</suite>

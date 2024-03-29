@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Login Suite">
+    <test name="Login">
+
+        <groups>
+            <run>
+                <include name="Login"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_401.US_401_POM"/>
+            <class name="US_402.US_402_POM"/>
+        </classes>
+
+    </test>
+</suite>
