@@ -5,10 +5,9 @@ import Utility.GkkBaseDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.lang.model.util.Elements;
-
 public class US_403_POM extends GkkBaseDriver {
 
+    //Kodların olacağı kısım
     @Test(groups = {"Smoke", "Logout"})
     public void US403() {
         US_403_Elements elements = new US_403_Elements();

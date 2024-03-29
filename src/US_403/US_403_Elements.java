@@ -5,12 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US_403_Elements extends GkkBaseDriver{
+public class US_403_Elements {
+
+    //Locaterları tanımlayacağımız kısım
     public US_403_Elements() {
         PageFactory.initElements(GkkBaseDriver.driver, this);
     }
 
-    //Locaterları tanımlayacağımız kısım
     @FindBy(xpath = "//span[@class='gt-lang-code']")
     public WebElement language;
 
@@ -45,3 +46,4 @@ public class US_403_Elements extends GkkBaseDriver{
     public WebElement logout;
 
 }
+

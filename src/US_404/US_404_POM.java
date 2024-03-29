@@ -1,6 +1,5 @@
 package US_404;
 
-import US_403.US_403_Elements;
 import Utility.GkkBaseDriver;
 import Utility.Tools;
 import net.bytebuddy.utility.RandomString;
@@ -23,8 +22,8 @@ public class US_404_POM extends GkkBaseDriver {
         myClick(elements.demo);
         myClick(elements.openMRS2);
         myClick(elements.EnterTheOpenMRS2Demo);
-        mySendKeys(elements.userName,"admin");
-        mySendKeys(elements.password,"Admin123");
+        mySendKeys(elements.userName, "admin");
+        mySendKeys(elements.password, "Admin123");
 
         List<WebElement> locations = driver.findElements(By.xpath("//li[contains(@data-key,'')]"));
         int randomIndex = Tools.randomGenerator(locations.size());
@@ -35,54 +34,54 @@ public class US_404_POM extends GkkBaseDriver {
         myClick(elements.RegisteraPatient);
 
         String givenName = RandomString.make(8);
-        mySendKeys(elements.givenName,givenName);
+        mySendKeys(elements.givenName, givenName);
 
         String middleName = RandomString.make(8);
-        mySendKeys(elements.middleName,middleName);
+        mySendKeys(elements.middleName, middleName);
 
         String familyName = RandomString.make(8);
-        mySendKeys(elements.familyName,familyName);
+        mySendKeys(elements.familyName, familyName);
         myClick(elements.rightButton);
 
         myClick(elements.male);
         myClick(elements.rightButton);
 
-        mySendKeys(elements.day,"11");
+        mySendKeys(elements.day, "11");
         myClick(elements.months);
         myClick(elements.march);
-        mySendKeys(elements.year,"1986");
+        mySendKeys(elements.year, "1986");
         myClick(elements.rightButton);
 
         String mothersName = RandomString.make(8);
-        mySendKeys(elements.mothersname,mothersName);
+        mySendKeys(elements.mothersname, mothersName);
         myClick(elements.rightButton);
 
 
         String address1 = RandomString.make(25);
-        mySendKeys(elements.address1,address1);
+        mySendKeys(elements.address1, address1);
 
         String address2 = RandomString.make(25);
-        mySendKeys(elements.address2,address2);
+        mySendKeys(elements.address2, address2);
 
         String cityVillage = RandomString.make(10);
-        mySendKeys(elements.cityVillage,cityVillage);
+        mySendKeys(elements.cityVillage, cityVillage);
 
         String stateProvince = RandomString.make(11);
-        mySendKeys(elements.stateProvince,stateProvince);
+        mySendKeys(elements.stateProvince, stateProvince);
 
         String country = RandomString.make(8);
-        mySendKeys(elements.country,country);
-        mySendKeys(elements.postalCode,"55555");
+        mySendKeys(elements.country, country);
+        mySendKeys(elements.postalCode, "55555");
         myClick(elements.rightButton);
 
-        mySendKeys(elements.phoneNumber,"0505555555");
+        mySendKeys(elements.phoneNumber, "0505555555");
         myClick(elements.rightButton);
 
         myClick(elements.patientrelationship);
         myClick(elements.sibling);
 
         String personName = RandomString.make(11);
-        mySendKeys(elements.personName,personName);
+        mySendKeys(elements.personName, personName);
         myClick(elements.rightButton);
 
         myClick(elements.confirm);
